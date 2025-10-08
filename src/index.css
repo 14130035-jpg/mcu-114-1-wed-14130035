@@ -3,8 +3,13 @@ body {
     padding: 0;
 }
 
-header{
+header {
     text-align: center;
+}
+
+section.body{
+    width: 90%;
+    margin: 0px auto;
 }
 
 nav {
@@ -13,7 +18,7 @@ nav {
 
 .card{
      border:solid 1px #999;
-     border -redius: 8px;
+     border-radius: 8px;
      width: 250px;
 }
 
