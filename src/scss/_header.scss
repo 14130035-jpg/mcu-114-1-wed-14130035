@@ -1,3 +1,4 @@
+@use "./common";
 header {
   border-bottom: solid 1px #e5e7ed;
   background-color: var(--background-color);
@@ -6,9 +7,7 @@ header {
   z-index: 50;
   h3 {
     margin: 0px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.75rem;
+    @include common.fontStyle(1.25rem, 700, 1.175rem);
     color: var(--primary-color);
   }
   nav {
@@ -46,6 +45,7 @@ header {
       }
 
       button {
+        @include common.buttonStyle;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         padding: 0.5rem;
@@ -56,10 +56,8 @@ header {
     }
   }
   button {
+    @include common.buttonStyle;
     background-color: transparent;
-    padding: 0.5rem;
-    border: none;
-    cursor: pointer;
     color: var(--text-color);
   }
 }
