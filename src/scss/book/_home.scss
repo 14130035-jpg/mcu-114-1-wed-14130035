@@ -28,7 +28,7 @@ div.home {
       }
 
       strong {
-        @include common.fontStyle(1.25rem, 400, 1.75rem);
+        @include common.fontStyle(var(--home-heading-font-size), 400, 1.75rem);
         margin-bottom: 30px;
         color: var(--gray-color-500);
       }
@@ -82,7 +82,7 @@ div.home {
       align-items: center;
 
       img {
-        width: 300px;
+        width: var(--home-image-width);
       }
     }
   }
